@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Document</title>
+    <style>
+            /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+            #map {
+              height: 100%;
+            }
+            /* Optional: Makes the sample page fill the window. */
+            html, body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+          </style>
+
+
+
 </head>
 <body>
+<h1>Search the MAP</h1>
+<!-- search box -->
+<div style="border:1px solid #ccc; background:#e5e5e5; padding:10px;">
+    <input type="text" id="my-input">
+    <input type="button" id="my-button" value="find">
+  </div>
+<br>
+        <div>Country: <span id="country"></span>
+            <div>State: <span id="state"></span>
+            <div>City: <span id="city"></span>
+            <div>Latitude: <span id="latitude"></span>
+            <div>Longitude: <span id="longitude"></span>
+            <div>IP: <span id="ip"></span>
+
+    <div id="map-container">
+        
+        <div id="map" style="width: 45%; height: 400px"></div>
+
+    </div>
+
+
     
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3G8BwCdv0XUpRNKq_W0CnhZwODTZYugw&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="assets/javascript/googlemaps.js"></script>
 </body>
 </html>
