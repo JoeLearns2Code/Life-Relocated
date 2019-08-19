@@ -1,4 +1,4 @@
-# Project-1 - Life Relocated
+Life Relocated
 
 Life Relocated is an app designed to allow the user to look up other locations in the country and compare various statistics to their current location. 
 
